@@ -1,5 +1,5 @@
 import React from 'react'
-import photo from '../assets/photo.png'
+import photo from '../assets/tjPfpLogo.png'
 import {RiArrowRightSLine} from 'react-icons/ri'
 import { Link } from 'react-scroll'
 
@@ -35,7 +35,7 @@ const Home = () => {
           <img 
             src={photo} 
             alt="my profile"
-            className='rounded-2xl mx-auto w-1/2 md:w-1/3'  
+            className=''  
           />
         </div>
       </div>
