@@ -1,7 +1,7 @@
 import React from 'react'
 import sudokuPortfolio from '../assets/portfolio/sudokuFinal2.png'
-import mockPortfolio from '../assets/portfolio/mockPortfolioFinal.png'
-import comingSoonPortfolio from '../assets/portfolio/comingSoonPortfolioFinal.png'
+import mockPortfolio from '../assets/portfolio/mockPortfolio.png'
+import nftPortfolio from '../assets/portfolio/marketImage.png'
 
 const Portfolio = () => {
 
@@ -18,8 +18,8 @@ const Portfolio = () => {
     },
     {
       id:3,
-      src: comingSoonPortfolio,
-      https: ''
+      src: nftPortfolio,
+      link: 'https://github.com/tJohnsonAce/3METADMock'
     },
   ]
 
