@@ -1,6 +1,6 @@
 import React from 'react'
-import sudokuPortfolio from '../assets/portfolio/sudokuFinal2.png'
-import mockPortfolio from '../assets/portfolio/mockPortfolio.png'
+import pcosPortfolio from '../assets/portfolio/portfolioProject1.png'
+import ljpPortfolio from '../assets/portfolio/ljpProject2.png'
 import nftPortfolio from '../assets/portfolio/marketImage.png'
 
 const Portfolio = () => {
@@ -8,13 +8,15 @@ const Portfolio = () => {
   const portfolios = [
     {
       id:1,
-      src: sudokuPortfolio,
-      link: 'https://github.com/tJohnsonAce/Sudoku_Solver'
+      src: pcosPortfolio,
+      link: 'https://github.com/tJohnsonAce/pcos',
+      liveLink: 'https://facesofpcos.com'
     },
     {
       id:2,
-      src: mockPortfolio,
-      link: 'https://github.com/tJohnsonAce/reactCoursePortfolio'
+      src: ljpPortfolio,
+      link: 'https://https://github.com/tJohnsonAce/ljp1',
+      liveLink: 'https://https://www.ljphotographyin.com/'
     },
     {
       id:3,
@@ -33,30 +35,35 @@ const Portfolio = () => {
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Portfolio
           </p>
-          <p className="py-6">Check out some of my work right here</p>
+          <p className="py-6">Check out some of my work here</p>
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, link }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-              <img
-                src={src}
-                alt=""
-                className="rounded-md duration-200 hover:scale-105"
-              />
-              <div className="flex items-center justify-center">
-                <a className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 bg-slate-600 rounded-2xl bg-opacity-40' href={link} target='_blank' rel='noopener noreferrer'>
-                  <button className="w-full">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          ))}
+        {portfolios.map(({ id, src, link, liveLink }) => (
+  <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+    <img
+      src={src}
+      alt=""
+      className="rounded-md duration-200 hover:scale-105 h-56 w-full object-cover" // Set the height and add 'object-cover'
+    />
+    <div className="flex items-center justify-center">
+      <a href={link} target='_blank' rel='noopener noreferrer' className="w-1/4 m-4 duration-200 hover:scale-105 bg-slate-600 rounded-2xl bg-opacity-40 flex justify-center items-center">
+        <button className="px-6 py-3">
+          Code
+        </button>
+      </a>
+      <a href={liveLink} target='_blank' rel='noopener noreferrer' className="w-1/4 m-4 duration-200 hover:scale-105 bg-slate-600 rounded-2xl bg-opacity-40 flex justify-center items-center">
+        <button className="px-6 py-3">
+          Demo
+        </button>
+      </a>
+    </div>
+  </div>
+))}
         </div>
       </div>
     </div>
   );
 };
 
-export default Portfolio
+export default Portfolio;

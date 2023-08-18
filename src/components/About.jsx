@@ -10,13 +10,13 @@ const About = () => {
           </p>
         </div>
         <p className='text-xl mt-20'>
-          Hello, my name is Trevor Johnson and I am a Front-End Developer. I began my journey in tech almost two years ago learning Python and ever since I have been obsessed with programming.
+        Hello, my name is Trevor Johnson, and I am a Front-End Developer. I began my journey in tech almost two years ago learning Python, and ever since I have been obsessed with programming.
         </p>
 
         <br />
 
         <p className='text-xl'>
-          This year, I developed a new obsession with web development. Being able to create a page and style it however you see fit and being able to see those results is a magical thing. I am open to discuss any opportunities or any project you might have.  
+        This year, I developed a new obsession with web development. Being able to create a page and style it however you see fit and seeing those results is a magical thing. Whether it's crafting interactive user interfaces or building responsive web pages, I'm always excited about new challenges. I am open to discussing any opportunities or projects you might have.
         </p>
       </div>
     </div>
